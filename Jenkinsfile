@@ -2,6 +2,13 @@ pipeline {
     agent any
 
     stages {
+        stage('TF-Init') {
+            steps {
+                echo 'Run Terraform plan to perform the DRY run'
+                sh 'terraform init'
+            }
+        }
+         s
         stage('TF-Plan') {
             steps {
                 echo 'Run Terraform plan to perform the DRY run'
