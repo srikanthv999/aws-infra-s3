@@ -1,1 +1,1 @@
-s3bktName="s3jenkinsbkt-12378"
+s3bktName="s3jenkinsbkt-12378-dev"
