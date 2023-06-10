@@ -18,7 +18,7 @@ pipeline {
          stage('TF-Apply') {
             steps {
                 echo 'Run the Terraform apply to create the infrastructure '
-                sh 'terraform apply'
+                sh 'terraform apply -auto-approve'
             }
         }
     }
