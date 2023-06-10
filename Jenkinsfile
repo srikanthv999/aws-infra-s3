@@ -8,7 +8,7 @@ pipeline {
                 sh 'terraform init'
             }
         }
-         s
+      
         stage('TF-Plan') {
             steps {
                 echo 'Run Terraform plan to perform the DRY run'
